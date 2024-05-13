@@ -283,7 +283,7 @@ button:hover::before,
 
 .header {
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .header.open .header__toggle>span:first-child {
@@ -753,4 +753,15 @@ button:hover::before,
 .footer .attribution {
     margin-top: 4rem;
     font-size: 0.875rem;
+}
+
+.header.active {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 8px #000;
+}
+
+#div {
+    min-width: 100%;
+    background-color: white;
 }
